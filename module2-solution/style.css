@@ -48,7 +48,7 @@
     width: 90%;
     height: auto;
     margin: 2.5%;
-    color: black; 
+    color: black; /* Add a semicolon here */
     font-size: 25px;
     padding: 2%;
     padding-top: 55px;
@@ -70,7 +70,7 @@
   
   
   /********** Large devices only **********/
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
     .col-lg-4 {
         float: left;
       width: 33.33%;
