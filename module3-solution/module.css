@@ -1,42 +1,54 @@
-*{
-	margin: 0;
-	padding: 0;
+
+
+div > p {
+	text-align: justify;
+}
+
+.content-cell {
+	background-color: #b673a8;
+	margin-bottom: 15px;
+	padding: 10px 15px;
+}
+
+.content-cell h2 {
+	margin-top: -5px;
+}
+
+/* Not XS screen */
+@media (min-width:768px){
+	#collapsable-nav {
+		visibility: hidden;
+	}
+}
+
+/* XS screen */
+@media (max-width:767px){
 	
-}
-.navbar{
-
-border: none;
-background-color: black;
-color: #61122F;
-}
-body{
-	background-color: #61122F;
-	color: white;
-}
-.glyphicon{
-	font-size: 30px;
-	color:#61122F; 
-}
-
-.center{
-	width: 90%;
-	background-color: grey;
-
-}
-.container
-{
-	background-color: grey;
-}
-.text-center{
-	font-size: 30px;
-}
-
-h2{
-	text-align: center;
-}
-#myNavbar ul li a {
-	color: #61122F;
-}
-.navbar-brand{
-font-size: 30px;	
+	.navbar-brand {
+		margin-left: 15px;
+	}
+	
+	.content-cell {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+	#collapsable-nav {
+		background-color: #7cd77c;
+	}
+	
+	#nav-list {		
+		margin-bottom: 1px;
+		margin-top: 0px;
+	}
+	
+	#nav-list li{
+		text-align: center;
+		border: 1px solid #070707;
+		margin-bottom:-1px;
+	}
+	#nav-list li:hover{
+		font-weight: bold;
+		background-color: #7c817c;
+	}
 }
